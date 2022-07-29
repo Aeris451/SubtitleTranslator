@@ -1,0 +1,21 @@
+﻿<Window x:Class="SubtitleTranslator.WpfApp.AddTranslationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SubtitleTranslator.WpfApp"
+        mc:Ignorable="d"
+        Title="New translation" Height="500" Width="400">
+    <Grid>
+        <ComboBox x:Name="srLangCb" HorizontalAlignment="Left" Margin="150,70,0,0" VerticalAlignment="Top" Width="170"/>
+        <ComboBox x:Name="dstLangCb" HorizontalAlignment="Left" Margin="150,126,0,0" VerticalAlignment="Top" Width="170"/>
+        <TextBox x:Name="trNameTextBox" HorizontalAlignment="Left" Margin="150,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+        <Button x:Name="loadSubButton" Content="Load SRT" HorizontalAlignment="Left" Margin="42,255,0,0" VerticalAlignment="Top" Height="20" Width="120" Click="loadSubButton_Click"/>
+        <Label Content="Translation name:" HorizontalAlignment="Left" Margin="42,178,0,0" VerticalAlignment="Top"/>
+        <Label Content="Destination language:" HorizontalAlignment="Left" Margin="22,124,0,0" VerticalAlignment="Top"/>
+        <Label Content="Source language:" HorizontalAlignment="Left" Margin="46,68,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="srtPath" HorizontalAlignment="Center" Margin="0,290,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="279" Height="20" InputScope="FileName" />
+        <Button x:Name="translateButton" Content="Add translation" HorizontalAlignment="Left" Margin="200,255,0,0" VerticalAlignment="Top" Width="120" Click="translateButton_Click"/>
+        <Button x:Name="assLoadButton" Content="Load ASS" HorizontalAlignment="Left" Margin="42,230,0,0" VerticalAlignment="Top" Width="120" Click="assLoadButton_Click" RenderTransformOrigin="0.708,0.383"/>
+    </Grid>
+</Window>

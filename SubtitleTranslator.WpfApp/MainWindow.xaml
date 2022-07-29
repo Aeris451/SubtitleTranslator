@@ -1,0 +1,28 @@
+﻿<Window x:Class="SubtitleTranslator.WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SubtitleTranslator.WpfApp"
+        mc:Ignorable="d"
+        Title="Subtitle translator v0.0.3" Height="550" Width="900">
+    <Grid>
+        <DataGrid x:Name="DataGridTranslations" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="27,136,31,32"/>
+        <Button x:Name="trCreateBt" Content="Add translation" HorizontalAlignment="Left" Margin="14,13,0,0" VerticalAlignment="Top" Height="21" Width="137" Click="trCreateBt_Click"/>
+        <Button x:Name="translateButton" Content="Translate" HorizontalAlignment="Left" Margin="14,45,0,0" VerticalAlignment="Top" Width="137" Click="translateButton_Click"/>
+        <Button x:Name="saveSrtBt" Content="Export to SRT" HorizontalAlignment="Left" Margin="14,76,0,0" VerticalAlignment="Top" Height="22" Width="137" Click="saveSrtBt_Click"/>
+        <Button x:Name="licenceButton" Content="Enter DeepL api licence" HorizontalAlignment="Left" Margin="290,13,0,0" VerticalAlignment="Top" Height="20" Width="145" Click="licenceButton_Click"/>
+        <Label x:Name="licenceLabel" Content="Licence not entered." HorizontalAlignment="Left" Margin="462,16,0,0" VerticalAlignment="Top" Width="281"/>
+        <Label x:Name="srLangLabel" Content="Source language: " HorizontalAlignment="Left" Margin="462,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="dstLangLabel" Content="Destination Language: " HorizontalAlignment="Left" Margin="435,82,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="nameLabel" Content="Translation name: " HorizontalAlignment="Left" Margin="611,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="idLabel" Content="Translation id: " HorizontalAlignment="Left" Margin="611,82,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="dbSaveBt" Content="Save" HorizontalAlignment="Left" Margin="169,13,0,0" VerticalAlignment="Top" Width="104" Click="dbSaveBt_Click"/>
+        <Button x:Name="dbLoadBt" Content="Load" HorizontalAlignment="Left" Margin="169,75,0,0" VerticalAlignment="Top" Width="104" Click="dbLoadBt_Click"/>
+        <Button x:Name="usageButton" Content="Check usage" HorizontalAlignment="Left" Margin="290,45,0,0" VerticalAlignment="Top" Width="145" Height="21" Click="usageButton_Click"/>
+        <Button x:Name="saveAsBtn" Content="New save" HorizontalAlignment="Left" Margin="169,45,0,0" VerticalAlignment="Top" Width="104" Click="saveAsBtn_Click"/>
+        <Label x:Name="loadingLabel" Content="" HorizontalAlignment="Left" Margin="290,101,0,0" VerticalAlignment="Top" Width="183"/>
+        <Button x:Name="saveAssBtn" Content="Export to ASS" HorizontalAlignment="Left" Margin="14,107,0,0" VerticalAlignment="Top" Width="137" Click="saveAssBtn_Click"/>
+
+    </Grid>
+</Window>

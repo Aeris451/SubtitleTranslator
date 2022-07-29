@@ -1,0 +1,15 @@
+﻿<Window x:Class="SubtitleTranslator.WpfApp.DbLoadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SubtitleTranslator.WpfApp"
+        mc:Ignorable="d"
+        Title="DbLoadWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="trDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="48,146,48,71"/>
+        <Button x:Name="loadBtn" Content="Load selected" HorizontalAlignment="Left" Margin="48,84,0,0" VerticalAlignment="Top" Height="36" Width="168" FontSize="18" Click="loadBtn_Click"/>
+        <Button x:Name="deleteBtn" Content="Delete selected" HorizontalAlignment="Left" Margin="48,28,0,0" VerticalAlignment="Top" Height="36" Width="168" FontSize="18" Click="deleteBtn_Click"/>
+
+    </Grid>
+</Window>

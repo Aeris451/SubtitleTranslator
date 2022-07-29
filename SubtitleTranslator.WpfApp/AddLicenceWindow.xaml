@@ -1,0 +1,17 @@
+﻿<Window x:Class="SubtitleTranslator.WpfApp.AddLicenceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SubtitleTranslator.WpfApp"
+        mc:Ignorable="d"
+        Title="AddLicenceWindow" Height="300" Width="500
+        ">
+    <Grid>
+        <Label Content="Enter your DeepL licence here:" HorizontalAlignment="Left" Margin="77,41,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="licenceTb" HorizontalAlignment="Center" Margin="0,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="422" Height="26"/>
+        <Button Content="Accept" HorizontalAlignment="Left" Margin="156,210,0,0" VerticalAlignment="Top" Height="26" Width="172" Click="Button_Click"/>
+        <Button Content="Load from save" HorizontalAlignment="Left" Margin="156,164,0,0" VerticalAlignment="Top" Height="26" Width="172" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
